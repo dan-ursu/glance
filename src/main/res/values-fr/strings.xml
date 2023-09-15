@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Glance</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_about">Environ</string>
+    <string name="title_activity_invisible">InvisibleActivity</string>
+    <string name="stub">Agitant votre main au-dessus votre téléphone ou le sortant de votre poche va le réveiller automatiquement. L\'écran Glance n\'est pas affiché.</string>
+    <string name="case1">Agitant votre main au-dessus votre téléphone ou le sortant de votre poche va le réveiller automatiquement. L\'écran Glance n\'est pas affiché.</string>
+    <string name="case2">Agitant votre main au-dessus votre téléphone ou le sortant de votre poche va afficher l\'écran Glance, qui est affiché pour 5 secondes.</string>
+    <string name="case3">Éteindre l\'écran affichera l\'écran Glance, qui reste jusqu\'à vous appuyez sur le bouton \'retour\' ou \'maison\'.</string>
+    <string name="case_disabled">Glance est désactivé.</string>
+    <string name="adminDescription">VOUS DEVREZ RÉVOQUER LES AUTORISATIONS D\'ADMINISTRATEUR DE L\'APPAREIL DE GLANCE SI VOUS VOULEZ LE DÉSINSTALLER!</string>
+    
+    <color name="white">#FFFFFF</color>
+    
+    <string name="title_activity_glance">GlanceActivity</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="label_custom_glance">L\'écran Glance</string>
+    <string name="label_always_on">Toujours Montré</string>
+    <string name="label_colour">Couleur</string>
+    <string name="label_brightness">Luminosité</string>
+    <string name="label_notification">Notifications</string>
+    <string name="activate">Activer</string>
+    <string name="autolock">Auto-Lock L\'écran</string>
+    <string name="toggle">Basculer</string>
+    
+    <string name="white">Blanc</string>
+    <string name="red">Rouge</string>
+    <string name="green">Vert</string>
+    <string name="blue">Bleu</string>
+    
+    <string name="dim">Sombre</string>
+    <string name="normal">Normal</string>
+    <string name="bright">Brillant</string>
+</resources>

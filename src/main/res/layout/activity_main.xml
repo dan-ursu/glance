@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#000000"
+    tools:context="danursu.glance.MainActivity" >
+
+    <Switch
+        android:id="@+id/glanceSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="15dp"
+		android:layout_marginTop="30dp"
+        android:checked="true" />
+
+    <ImageView
+        android:id="@+id/glanceIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/glance_icon" />
+
+    <TextView
+        android:id="@+id/glanceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/glanceSwitch"
+        android:layout_alignBottom="@+id/glanceSwitch"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/glanceIcon"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/customGlanceScreenLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/glanceIcon"
+        android:layout_below="@+id/glanceIcon"
+        android:layout_marginTop="30dp"
+        android:text="@string/label_custom_glance"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white" />
+
+    <Switch
+        android:id="@+id/customGlanceScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/customGlanceScreenLabel"
+        android:layout_alignBottom="@+id/customGlanceScreenLabel"
+        android:layout_alignRight="@+id/glanceSwitch" />
+
+    <TextView
+        android:id="@+id/alwaysOnLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/customGlanceScreenLabel"
+        android:layout_below="@+id/customGlanceScreen"
+        android:layout_marginTop="20dp"
+        android:text="@string/label_always_on"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white" />
+    
+    <TextView
+        android:id="@+id/colourLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/alwaysOnLabel"
+        android:layout_below="@+id/alwaysOnLabel"
+        android:layout_marginTop="30dp"
+        android:text="@string/label_colour"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white" />
+    
+    <TextView
+        android:id="@+id/brightnessLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/colourLabel"
+        android:layout_below="@+id/colourLabel"
+        android:layout_marginTop="25dp"
+        android:text="@string/label_brightness"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white" />
+    
+    <Switch
+        android:id="@+id/alwaysOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/alwaysOnLabel"
+        android:layout_alignBottom="@+id/alwaysOnLabel"
+        android:layout_alignRight="@+id/customGlanceScreen" />
+    
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/stub"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white" />
+    
+    <Spinner
+        android:id="@+id/colours"
+        style="@android:style/Widget.Holo.Spinner"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/colourLabel"
+        android:layout_alignRight="@+id/alwaysOn" />
+    
+    <Spinner
+        android:id="@+id/brightness"
+        style="@android:style/Widget.Holo.Spinner"
+		android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/brightnessLabel"
+        android:layout_alignRight="@+id/alwaysOn" />
+
+    <TextView
+        android:id="@+id/notificationsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/brightnessLabel"
+        android:layout_below="@+id/brightnessLabel"
+        android:layout_marginTop="31dp"
+        android:text="@string/label_notification"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/notificationsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/notificationsLabel"
+        android:layout_alignBottom="@+id/notificationsLabel"
+        android:layout_alignRight="@+id/brightness"
+        android:text="@string/activate" />
+
+    <Button
+        android:id="@+id/autolockButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/notificationsButton"
+        android:layout_below="@+id/notificationsButton"
+        android:layout_marginTop="15dp"
+        android:text="@string/toggle" />
+
+    <TextView
+        android:id="@+id/autolockLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/autolockButton"
+        android:layout_alignBottom="@+id/autolockButton"
+        android:layout_alignLeft="@+id/notificationsLabel"
+        android:text="@string/autolock"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
